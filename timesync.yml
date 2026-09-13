@@ -1,0 +1,10 @@
+---
+- name: Playbook to Configuring timesync
+  hosts: all
+  vars:
+    timesync_ntp_servers:
+      - hostname: 10.10.1.200
+        iburst: true
+  roles:
+    - rhel-system-roles.timesync
+
