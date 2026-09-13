@@ -1,0 +1,10 @@
+---
+- name: Playbook-1 configuring load-balancing
+  hosts: balancers
+  roles:
+    - balancer
+
+- name: Playbook-2 configuring phpinfo
+  hosts: webservers
+  roles:
+    - phpinfo
