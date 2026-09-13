@@ -1,9 +1,0 @@
----
-- name: Q9 - Playbook to use apache role
-  hosts: webservers
-  gather_facts: true
-  become: true
-  tasks:
-    - name: Importing apache role
-      ansible.builtin.import_role:
-        name: apache
